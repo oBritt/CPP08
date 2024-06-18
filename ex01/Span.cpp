@@ -45,6 +45,21 @@ void Span::addNumber(int number)
     }
 }
 
+void Span::addNumber(int *numbers, int len)
+{
+    if (this->arr.size() + len >= this->max_len)
+    {
+        throw std::exception();
+    }
+    else
+    {
+        for (int i = 0; i < len; i++)
+        {
+            this->arr.push_back(numbers[i]);
+        }
+    }
+}
+
 int Span::longestSpan(void)
 {
     if (arr.size() < 2)

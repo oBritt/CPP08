@@ -10009,6 +10009,15 @@ int main()
    Span b = Span(*a);
    delete a;
 
+
    std::cout << b.shortestSpan() << std::endl;
    std::cout << b.longestSpan() << std::endl;
+
+    Span c(10);
+    int arr[4] = {10, 3, 13, 4};
+    c.addNumber(arr, 4);
+
+    std::cout << std::endl;
+    std::cout << c.shortestSpan() << std::endl;
+   std::cout << c.longestSpan() << std::endl;
 }

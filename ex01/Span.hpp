@@ -21,6 +21,7 @@ class Span
         int shortestSpan(void);
         int longestSpan(void);
         void addNumber(int number);
+        void addNumber(int *numbers, int len);
 
 };
 
