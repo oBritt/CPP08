@@ -13,5 +13,10 @@ int main()
     {
         std::cout << *it << std::endl;
     }
+    MutantStack<int>b = a;
 
+    for (std::stack<int>::container_type::iterator it = b.begin(); it != b.end(); it++)
+    {
+        std::cout << *it << std::endl;
+    }
 }
